@@ -6,4 +6,4 @@
 
 page : 273
 
-The best choice for bginners.
+The best choice for begginners.
