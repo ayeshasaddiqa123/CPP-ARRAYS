@@ -196,3 +196,77 @@ for (int i=0;i<4;i++)
 
    return 0; //return 0 to operating system
 }
+
+
+
+#include<iostream>     // include the iostream library (a preprocessor directive)
+using namespace std;     // use the stanadard namespace
+int main ()               // main function from where execution starts
+{
+	int a[5];
+	cout<<"Enter values in array:";
+	for(int i=0;i<5;i++)
+	{
+		cin>>a[i];
+	}
+		cout<<"Values in array are:";
+	for(int i=0;i<5;i++)
+	{
+		cout<<a[i]<<"\t";
+	}
+	int loc;
+	cout<<"\nenter index from which you want to delete values :";
+	cin>>loc;
+	
+	for (int i=loc;i<4;i++)
+	{
+		a[i]=a[i+1];
+		
+		
+	}
+	cout<<"Array after values delte from it";
+	for (int j=0;j<4;j++)
+	{
+		cout<<a[j]<<"\t";
+	}
+   return 0; //return 0 to operating system
+}
+
+
+
+#include<iostream>     // include the iostream library (a preprocessor directive)
+using namespace std;     // use the stanadard namespace
+int main ()               // main function from where execution starts
+{
+	int a[5];
+	cout<<"Enter values in array:";
+	for(int i=0;i<5;i++)
+	{
+		cin>>a[i];
+	}
+		cout<<"Values in array are:";
+	for(int i=0;i<5;i++)
+	{
+		cout<<a[i]<<"\t";
+	}
+	int loc;
+	cout<<"\nenter index to which you want to insert value :";
+	cin>>loc;
+	int val;
+	cout<<"Enter value you want to enter :";
+	cin>>val;
+	
+	for (int i=4;i>=loc;i--)
+	
+		a[i+1]=a[i];
+		a[loc]=val;
+		
+		
+	
+	cout<<"Array after values delte from it";
+	for (int j=0;j<6;j++)
+	{
+		cout<<a[j]<<"\t";
+	}
+   return 0; //return 0 to operating system
+}
