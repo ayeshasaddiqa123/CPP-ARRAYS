@@ -270,3 +270,130 @@ int main ()               // main function from where execution starts
 	}
    return 0; //return 0 to operating system
 }
+
+#include<iostream>     // include the iostream library (a preprocessor directive)
+using namespace std;     // use the standard namespace
+
+class Sum {
+    private:
+        int a[5];
+        int b[5];
+    public:
+        Sum() {
+            // Initialize arrays with values 0 through 4
+            for(int i = 0; i < 5; i++) {
+                a[i] = i;
+                b[i] = i;
+            }
+        }
+        
+        // Function to display array elements
+        void display() {
+            for(int i = 0; i < 5; i++) {
+                cout << a[i] << " ";
+            }
+            cout << endl;
+        }
+
+        // Overloading + operator
+        Sum operator +(const Sum& obj) {
+            Sum temp;
+            for(int i = 0; i < 5; i++) {
+                temp.a[i] = this->a[i] + obj.a[i];
+            }
+            return temp;
+        }
+};
+
+int main() {
+    Sum obj1;    // First object
+    Sum obj2;    // Second object
+    Sum result;  // Object to store result  
+
+    cout << "First array: ";
+    obj1.display();
+    
+    cout << "Second array: ";
+    obj2.display();
+
+    // Adding arrays using overloaded + operator
+    result = obj1 + obj2;
+    
+    cout << "Result after addition: ";
+    result.display();
+
+    return 0;
+}
+
+
+
+#include<iostream>     // include the iostream library (a preprocessor directive)
+#include<iomanip>
+using namespace std;     // use the stanadard namespace
+class Sum
+{
+	private:
+		int a[3][4];
+		int b[3][4];
+		int c[3][4];
+		
+	public:
+	     void input()
+		{
+			cout<<"Enter elements in first array :";
+			for(int i=0;i<3;i++) 
+				for(int j=0;j<4;j++)
+					cin>>a[i][j];
+					
+    	          cout<<"Enter elements in second array :";
+			for(int i=0;i<3;i++) 
+				for(int j=0;j<4;j++)
+					cin>>b[i][j];		
+
+			}
+		void adding_Arrays()
+		{
+		  for(int i=0;i<3;i++) 
+				for(int j=0;j<4;j++)
+				c[i][j]=a[i][j]+b[i][j];
+					
+			}	
+		void display()	
+		{
+			cout<<"Array 1 :"<<endl;
+				  for(int i=0;i<3;i++) 
+			{
+			     for(int j=0;j<4;j++)
+				 cout<<a[i][j]<<"  ";
+				 
+				 cout<<endl;
+			}
+					cout<<"Array 2 :"<<endl;
+				  for(int i=0;i<3;i++) 
+			{
+					for(int j=0;j<4;j++)
+				cout<<b[i][j]<<"  ";
+			
+			cout<<endl;}
+			
+			
+			cout<<"The concatenated array is :\n";
+			 for(int i=0;i<3;i++) 
+				{
+				for(int j=0;j<4;j++)
+				  cout<<c[i][j]<<"  ";
+				  cout<<endl;
+				  }
+		}
+			
+};
+
+int main ()               // main function from where execution starts
+{
+	Sum s;
+	s.input();
+	s.adding_Arrays();
+	s.display();
+	
+   return 0; //return 0 to operating system
+}
