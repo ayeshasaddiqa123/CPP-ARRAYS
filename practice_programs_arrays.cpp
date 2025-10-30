@@ -1,3 +1,7 @@
+
+// program 1 Write a program to find total number of days spent from the year start till now using arrays.
+
+
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
 
@@ -15,9 +19,11 @@ int main ()               // main function from where execution starts
 	{
 		total+=month[i];
 	}
-	cout<<"Total days spent from thr year are :"<<total;
+	cout<<"Total days spent from the year are :"<<total;
    return 0; //return 0 to operating system
 }
+
+// program 2 Write a program to count total number of persons between age 50 and 60 using arrays.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -36,6 +42,8 @@ int main ()               // main function from where execution starts
 	cout<<"Total number of persons between 50 and 60  are :"<<count;
    return 0; //return 0 to operating system
 }
+
+// program 3 Write a program to find sum of numbers , squares and cubes using arrays.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -71,6 +79,8 @@ int main ()               // main function from where execution starts
    return 0; //return 0 to operating system
 }
 
+# program 4 Write a program to count total number of prime numbers in an array.
+
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
 int main ()               // main function from where execution starts
@@ -101,6 +111,8 @@ cout<<"\n total are "<<count;
    return 0; //return 0 to operating system
 }
 
+# program 5 Write a program to search an element in an array using linear and binary search.
+
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
 int main ()               // main function from where execution starts
@@ -128,6 +140,8 @@ int main ()               // main function from where execution starts
    return 0; //return 0 to operating system
 }
 
+
+# program 6 Write a program to search an element in an array using binary search.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -161,6 +175,8 @@ int main ()               // main function from where execution starts
 	   cout<<"Value found at loc "<<loc;
    return 0; //return 0 to operating system
 }
+
+// program 7 Write a program to sort an array using selection sort.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -198,6 +214,7 @@ for (int i=0;i<4;i++)
 }
 
 
+// program 8 Write a program to sort an array using bubble sort.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -233,6 +250,7 @@ int main ()               // main function from where execution starts
 }
 
 
+// program 9 Write a program to delete an element from an array.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the stanadard namespace
@@ -270,6 +288,9 @@ int main ()               // main function from where execution starts
 	}
    return 0; //return 0 to operating system
 }
+
+
+// program 10 Write a program to add two arrays using operator overloading.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 using namespace std;     // use the standard namespace
@@ -326,6 +347,7 @@ int main() {
 }
 
 
+// program 11 Write a program to add two 2D arrays using classes.
 
 #include<iostream>     // include the iostream library (a preprocessor directive)
 #include<iomanip>
